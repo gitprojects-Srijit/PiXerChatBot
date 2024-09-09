@@ -1,15 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
-body{
+
+body {
     background: rgb(229, 209, 238);
 }
-.chatbot{
+
+.chatbot {
     background: #fff;
     width: 420px;
     position: fixed;
@@ -22,25 +24,29 @@ body{
     border-radius: 15px;
     transform-origin: bottom right;
     box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
-                0 32 64px -48px rgba(0, 0, 0, 0.5);
+        0 32 64px -48px rgba(0, 0, 0, 0.5);
     transition: all 0.1s ease;
 }
-.show-bot .chatbot{
+
+.show-bot .chatbot {
     transform: scale(1);
     opacity: 1;
     pointer-events: auto;
 }
-.chatbot header{
+
+.chatbot header {
     background: #432dd3;
     padding: 16px 0;
     text-align: center;
     position: relative;
 }
-.chatbot header h2{
-    color: #fff;
+
+.chatbot header h2 {
+    color: #f2ff2e;
     font-size: 1.4rem;
 }
-.chatbot header span{
+
+.chatbot header span {
     position: absolute;
     right: 20px;
     top: 50%;
@@ -48,19 +54,23 @@ body{
     display: none;
     transform: translateY(-50%);
 }
-.chatbot .chatbox{
+
+.chatbot .chatbox {
     height: 510px;
     overflow-y: auto;
     padding: 30px 20px 100px;
 }
-.chatbox .chat{
+
+.chatbox .chat {
     display: flex;
 }
-.chatbox .outgoing{
+
+.chatbox .outgoing {
     justify-content: flex-end;
     margin: 20px 0;
 }
-.chatbox .incoming span{
+
+.chatbox .incoming span {
     height: 32px;
     width: 32px;
     background: #84e77b;
@@ -71,7 +81,8 @@ body{
     align-self: flex-end;
     color: white;
 }
-.chatbox .chat p{
+
+.chatbox .chat p {
     background: #9047d4;
     padding: 12px 16px;
     white-space: pre-wrap;
@@ -80,18 +91,21 @@ body{
     font-size: 0.95rem;
     max-width: 75%;
 }
-.chatbox .chat p.error{
+
+.chatbox .chat p.error {
     color: rgb(155, 10, 10);
     background: #f8caca;
 }
-.chatbox .incoming p{
+
+.chatbox .incoming p {
     color: black;
     border-radius: 10px 10px 10px 0;
     background: #f2f1f1;
 }
-.chatbot .chat-input{
+
+.chatbot .chat-input {
     position: absolute;
-    border-top: 1px solid #ccc; 
+    border-top: 1px solid #ccc;
     bottom: 0;
     width: 100%;
     display: flex;
@@ -99,7 +113,8 @@ body{
     background: #fff;
     padding: 5px 20px;
 }
-.chat-input textarea{
+
+.chat-input textarea {
     border: none;
     outline: none;
     font-size: 0.95rem;
@@ -109,7 +124,8 @@ body{
     resize: none;
     padding: 16px 15px 16px 0;
 }
-.chat-input span{
+
+.chat-input span {
     color: #9047d4;
     cursor: pointer;
     font-size: 1.35rem;
@@ -118,10 +134,12 @@ body{
     line-height: 64px;
     visibility: hidden;
 }
-.chat-input textarea:valid ~ span{
+
+.chat-input textarea:valid~span {
     visibility: visible;
 }
-.toggler{
+
+.toggler {
     position: fixed;
     right: 40px;
     bottom: 46px;
@@ -137,33 +155,39 @@ body{
     cursor: pointer;
     transition: all 0.2s ease;
 }
-.show-bot .toggler{
+
+.show-bot .toggler {
     transform: rotate(90deg);
 }
-.toggler span{
+
+.toggler span {
     position: absolute;
 }
+
 .show-bot .toggler span:first-child,
-.toggler span:last-child{
+.toggler span:last-child {
     opacity: 0;
 
 }
-.show-bot .toggler span:last-child{
+
+.show-bot .toggler span:last-child {
     opacity: 1;
 }
 
-@media(max-width : 490px){
-    .chatbot{
+@media(max-width : 490px) {
+    .chatbot {
         right: 0;
         bottom: 0;
         width: 100%;
         height: 100%;
         border-radius: 0;
     }
-    .chatbot .chatbox{
+
+    .chatbot .chatbox {
         height: 90%;
     }
-    .chatbot header span{
+
+    .chatbot header span {
         display: block;
     }
 }
