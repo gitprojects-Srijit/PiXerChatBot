@@ -6,7 +6,7 @@ const chatbotClose = document.querySelector(".close-Btn");
 const initialHeight = chatInput.scrollHeight;
 let userMassage;
 
-const createChatLi = (message, classname) =>{
+const createChatLi = (message, classname) => {
     //Create a chat element name "li" with passed message and classname
     const chatLi = document.createElement("li");
     chatLi.classList.add("chat", classname);
@@ -16,17 +16,17 @@ const createChatLi = (message, classname) =>{
     return chatLi;
 }
 
-const generateResponse = (incomingChat) =>{
+const generateResponse = (incomingChat) => {
     const API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=AIzaSyCNHIfeHTLQihfDSGqlSvGUwbqLi_5TsZY";
     const msgElement = incomingChat.querySelector("p");
 
     const requestOptions = {
         method: "POST",
-        header : {
+        header: {
             "Content-Type": "application/json"
         },
         body: JSON.stringify({
-            contents: [{"parts":[{"text":userMassage}]}]
+            contents: [{ "parts": [{ "text": userMassage }] }]
         })
     }
 
@@ -36,14 +36,15 @@ const generateResponse = (incomingChat) =>{
         msgElement.textContent = data.candidates[0].content.parts[0].text;
     }).catch((error) => {
         msgElement.classList.add("error");
-        msgElement.textContent = "Opps! Something went wrong. Please write proper message to understand......";
+        msgElement.textContent = "Opps! Something went wrong. Please write proper message to understand....";
     }).finally(() => chatBox.scrollTo(0, chatBox.scrollHeight));
 }
 
-const sendChat = () =>{
+const sendChat = () => {
+    //trime text from textarea box and display it
     userMassage = chatInput.value.trim();
     console.log(userMassage);
-    if(!userMassage) return;
+    if (!userMassage) return;
     chatInput.value = "";
     chatInput.style.height = `${initialHeight}px`;
 
@@ -52,11 +53,11 @@ const sendChat = () =>{
     chatBox.scrollTo(0, chatBox.scrollHeight);
 
     setTimeout(() => {
-        const incomingChat = createChatLi("Let me think...", "incoming");
+        const incomingChat = createChatLi("........", "incoming");
         chatBox.appendChild(incomingChat);
         chatBox.scrollTo(0, chatBox.scrollHeight);
         generateResponse(incomingChat);
-    },600);
+    }, 600);
 }
 
 chatInput.addEventListener("input", () => {
@@ -67,7 +68,7 @@ chatInput.addEventListener("input", () => {
 
 chatInput.addEventListener("keydown", (e) => {
     //press enter key for sending the message without clicking send icon
-    if(e.key === "Enter" && !e.shiftKey && window.innerWidth > 800) {
+    if (e.key === "Enter" && !e.shiftKey && window.innerWidth > 800) {
         e.preventDefault();
         sendChat();
     }
