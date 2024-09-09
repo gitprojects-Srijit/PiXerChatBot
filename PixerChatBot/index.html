@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>PiXerGpt</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <script src="gpt.js" defer></script>
+</head>
+
+<body>
+    <button class="toggler">
+        <span class="material"><img src="comment.svg" width="26px" height="32px" style="display: flex; align-items: center; justify-content: center;"></span>
+        <span class="material"><img src="close.svg" width="26px" height="32px" style="display: flex; align-items: center; justify-content: center;"></span>
+    </button>
+    <div class="chatbot">
+        <header>
+            <h2>PiXerBot</h2>
+            <span class="close-Btn"><img src="close.svg" width="26px" height="32px" style="display: flex; align-items: center; justify-content: center;"></span>
+        </header>
+        <ul class="chatbox">
+            <li class="chat incoming">
+                <span class="material"><img src="robot.svg" width="26px" height="32px"></span>
+                <p>Hi 👋 <br>How can I help you?</p>
+            </li>
+        </ul>
+        <div class="chat-input">
+            <textarea placeholder="Enter your message..." required></textarea>
+            <span id="send" class="material"><img src="send.svg" width="20px" height="30px"></span>
+        </div>
+    </div>
+</body>
+
+</html>
