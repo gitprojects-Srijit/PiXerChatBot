@@ -52,7 +52,7 @@ The chatbot is fully responsive, meaning it can scale and adjust its layout seam
 
 ## Preview image
 
-![Screenshot 2024-09-10 143535](https://github.com/user-attachments/assets/42eeddc1-da1c-404c-a4fd-1e4486b7ef31)
+![Screenshot 2024-09-11 002518](https://github.com/user-attachments/assets/748f2f53-4b2b-4f0a-883a-62c5b06a02a5)
 
 ## Color Reference
 
