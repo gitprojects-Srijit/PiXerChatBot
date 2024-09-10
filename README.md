@@ -30,20 +30,15 @@ This is a responsive chatbot <b>"PiXerChatBot"</b> using HTML, CSS, and JavaScri
 
 ## Appendix
 
-<h2><u>Frontend Technologies:</u></h2>
+<h3><u>Frontend Technologies:</u></h3>
+<h4>HTML:</h4> Used to structure the chatbot interface.
+<h4>CSS:</h4> Applied for responsive design, ensuring the chatbot adapts well to different screen sizes and devices.
+<h4>JavaScript:</h4> Handles the interactive elements, message sending/receiving, and dynamic updates within the chat interface.
 </br>
-<h3>HTML:</h3> Used to structure the chatbot interface.
-</br>
-<h3>CSS:</h3> Applied for responsive design, ensuring the chatbot adapts well to different screen sizes and devices.
-</br>
-<h3>JavaScript:</h3> Handles the interactive elements, message sending/receiving, and dynamic updates within the chat interface.
-</br>
-<h2><u>Gemini API Integration:</u></h2>
-</br>
+<h3><u>Gemini API Integration:</u></h3>
 The Gemini API key is used to power the AI capabilities of the chatbot, allowing it to process user inputs and deliver intelligent, context-aware responses in real time.
 </br>
 <h3><u>Responsive Design:</u></h3>
-</br>
 The chatbot is fully responsive, meaning it can scale and adjust its layout seamlessly to work on mobile, tablet, and desktop platforms without losing functionality or ease of use.
 
 ## Color Reference
