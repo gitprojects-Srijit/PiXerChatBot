@@ -3,7 +3,7 @@
 This is a responsive chatbot <b>"PiXerChatBot"</b> using HTML, CSS, and JavaScript, integrated with the Gemini API for AI-driven responses. Users can interact with the chatbot by typing messages. The chatbot processes these messages using JavaScript and sends them to the Gemini API. The AI-generated response is then displayed dynamically on the chat interface. The chatbot is designed to deliver seamless, real-time interaction across various devices, ensuring accessibility and a smooth user experience.
 
 <h4>The live preview is here. Go and check out---</h4>
-<a href="https://my-personal-pixerbot.netlify.app/">https://my-personal-pixerbot.netlify.app/</a>
+<a href="https://my-personal-pixerchatbot.netlify.app/">https://my-personal-pixerchatbot.netlify.app/</a>
 
 ## API Reference
 
