@@ -77,3 +77,29 @@ chatInput.addEventListener("keydown", (e) => {
 sendBtn.addEventListener("click", sendChat);
 chatbotClose.addEventListener("click", () => document.body.classList.remove("show-bot"));
 chatbotToggler.addEventListener("click", () => document.body.classList.toggle("show-bot"));
+
+
+// for dark mode to bright mode and vise-versa
+const inputElmt = document.querySelector(".input");
+const bodyElmt = document.querySelector(".chatbot");
+
+inputElmt.checked = JSON.parse(localStorage.getItem("mode"));
+updateBackground();
+
+inputElmt.addEventListener("input", () => {
+  updateBackground();
+  updateLocale();
+})
+
+function updateBackground(){
+  if(inputElmt.checked){
+    bodyElmt.style.background = "rgb(31, 31, 31)";
+  }
+  else {
+    bodyElmt.style.background = "white";
+  }
+}
+
+function updateLocale() {
+  localStorage.setItem("mode", JSON.stringify(inputElmt.checked))
+}
