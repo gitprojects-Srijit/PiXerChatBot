@@ -15,12 +15,12 @@ body {
     background: #fff;
     width: 420px;
     position: fixed;
-    right: 40px;
+    right: 62px;
     transform: scale(0.5);
     opacity: 0;
     pointer-events: none;
     overflow: hidden;
-    bottom: 100px;
+    bottom: 74px;
     border-radius: 15px;
     transform-origin: bottom right;
     box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
@@ -41,7 +41,7 @@ body {
     position: relative;
 }
 
-/* dark mode css on */
+/* dark mode css */
 
 .chatbot header .dark {
     position: absolute;
@@ -210,8 +210,8 @@ body {
 
 .toggler {
     position: fixed;
-    right: 40px;
-    bottom: 46px;
+    right: 58px;
+    bottom: 18px;
     height: 46px;
     width: 44px;
     display: flex;
