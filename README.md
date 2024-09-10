@@ -41,6 +41,19 @@ The Gemini API key is used to power the AI capabilities of the chatbot, allowing
 <h3><u>Responsive Design:</u></h3>
 The chatbot is fully responsive, meaning it can scale and adjust its layout seamlessly to work on mobile, tablet, and desktop platforms without losing functionality or ease of use.
 
+## Features
+
+- Responsive design
+- Pop up toggle
+- Live previews
+- Real-time AI responses
+- User-friendly experience
+- Cross platform 
+
+## Preview image
+
+![Screenshot 2024-09-10 143535](https://github.com/user-attachments/assets/42eeddc1-da1c-404c-a4fd-1e4486b7ef31)
+
 ## Color Reference
 
 | Color             | Hex                                                                |
@@ -49,13 +62,3 @@ The chatbot is fully responsive, meaning it can scale and adjust its layout seam
 | Example Color | ![#f8f8f8](https://via.placeholder.com/10/f8f8f8?text=+) #f8f8f8 |
 | Example Color | ![#00b48a](https://via.placeholder.com/10/00b48a?text=+) #00b48a |
 | Example Color | ![#00d1a0](https://via.placeholder.com/10/00b48a?text=+) #00d1a0 |
-
-## Features
-
-- Responsive design
-- Pop up toggle
-- Live previews
-- Real-time AI responses
-- User-friendly experience
-- Cross platform
-- 
